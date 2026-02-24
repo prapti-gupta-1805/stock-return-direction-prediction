@@ -85,3 +85,28 @@ print("\n" + "="*40)
 print(f"FINAL HYBRID ACCURACY: {accuracy_score(all_actuals, all_preds):.4f}")
 print("="*40)
 print(classification_report(all_actuals, all_preds))
+
+# Downloading Data...
+# Training Hybrid Ensemble per stock...
+# Ticker: RELIANCE.NS  | Acc: 0.4805
+# Ticker: TCS.NS       | Acc: 0.5032
+# Ticker: INFY.NS      | Acc: 0.4675
+# Ticker: HDFCBANK.NS  | Acc: 0.4481
+# Ticker: ICICIBANK.NS | Acc: 0.4545
+# Ticker: ITC.NS       | Acc: 0.5682
+# Ticker: LT.NS        | Acc: 0.5325
+# Ticker: SBIN.NS      | Acc: 0.5390
+# Ticker: AXISBANK.NS  | Acc: 0.5292
+# Ticker: HINDUNILVR.NS | Acc: 0.4935
+
+# ========================================
+# FINAL HYBRID ACCURACY: 0.5016
+# ========================================
+#               precision    recall  f1-score   support
+
+#            0       0.55      0.48      0.51      1672
+#            1       0.46      0.52      0.49      1408
+
+#     accuracy                           0.50      3080
+#    macro avg       0.50      0.50      0.50      3080
+# weighted avg       0.51      0.50      0.50      3080
